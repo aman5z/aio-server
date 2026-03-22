@@ -1,6 +1,7 @@
 # AIO-Server-Turning-an-Old-HP-Laptop-into-a-Multi-OS-Virtualization-Platform
 
-https://aman5z.blogspot.com/2024/09/projects.html
+
+<img width="1920" height="967" alt="PX macOS" src="https://github.com/user-attachments/assets/f74f5707-9550-4607-aff1-a274e126a770" />
 
 
 Objective:
