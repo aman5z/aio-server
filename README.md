@@ -1,43 +1,221 @@
-# AIO-Server-Turning-an-Old-HP-Laptop-into-a-Multi-OS-Virtualization-Platform
 
+# 🏗️ Unified Infrastructure Project
+
+## Villa Network + Virtualized Home Lab Server (NOC Simulation)
+
+A practical, real-world IT infrastructure project combining **multi-villa network deployment** with a **self-hosted virtualization server and monitoring system**, simulating a small-scale **Network Operations Center (NOC)** using low-cost hardware.
+
+---
+
+## 🌐 Project Overview
+
+Designed and deployed a **cost-effective, scalable network and monitoring solution** across:
+
+* 🏠 3 Villa Compounds
+* 🚪 42 Rooms
+* 👥 160+ Active Users
+
+At the core of the system, an **old HP laptop was repurposed as a centralized server**, running multiple services including monitoring, virtualization, and internal network tools.
+
+---
+
+## 🖥️ Core Infrastructure (AIO Server)
+
+Repurposed an old HP laptop into a **multi-service infrastructure server**:
+
+### 🔧 Hardware Optimization
+
+* Upgraded to SSD + increased RAM
+* Modified power button for headless operation
+* Used Ethernet bridging for stable connectivity
+
+### 🧠 Virtualization Platform
+
+* Installed **Proxmox VE**
+* Deployed multiple VMs:
+
+  * Ubuntu Server / Desktop
+  * Windows 11 & Windows Server
+  * Kali Linux
+  * Android TV OS
+* Configured LXC containers for lightweight services
+* Enabled backups, snapshots, and remote VNC access
+
+👉 This server acted as:
+
+* Monitoring backend
+* Internal service host
+* Testing lab
+* Network control point
+
+---
+
+## 📡 Villa Network Deployment
+
+### 🔌 Network Design & Setup
+
+* Configured routers, switches, and access points
+* Designed WiFi coverage across multi-floor villas
+* Optimized placement for signal strength & load distribution
+* Worked under strict budget constraints
+
+### 📊 Results
+
+✔ Improved network stability
+✔ Reduced downtime
+✔ Better bandwidth distribution
+✔ Increased user satisfaction
+
+---
+
+## 🖥️ Custom Network Monitoring Dashboard (Mini NOC)
+
+Developed a **lightweight monitoring dashboard** (Vanilla JavaScript) hosted on the same server.
+
+### 🎯 Objective
+
+Simulate a **real-world NOC interface** without heavy infrastructure.
+
+---
+
+## 🌐 WAN Monitoring (Internet)
+
+* Embedded Fast.com speed test
+* Public uptime monitoring
+* External network status tracking
+
+👉 Helps detect:
+
+* ISP issues
+* Internet slowdowns
+* Downtime events
+
+---
+
+## 🏠 LAN Monitoring (Internal Network)
+
+* Local speed test service
+* Internal monitoring endpoints
+* LAN-only tools (192.168.x.x access)
+
+👉 Provides:
+
+* Internal performance visibility
+* Service availability checks
+* Network diagnostics within villas
+
+---
+
+## 🎛️ Dashboard Features
+
+* Dark-mode UI
+* Floating quick-access menu
+* Real-time clock
+* Blogger-based lightweight hosting
+* Embedded monitoring tools
+
+👉 Built to be:
+
+* Fast
+* Lightweight
+* Accessible without backend complexity
+
+---
+
+## 🔐 Remote Access & Security
+
+* Implemented **Cloudflare Tunnel** for secure remote access
+* Used **Tailscale VPN (WireGuard)** for private network connectivity
+* Enabled remote SSH, ping, and service access across devices
+
+---
+
+## ☁️ Additional Services on Server
+
+* Private cloud storage (Nextcloud / OMV)
+* Media servers (Plex, Jellyfin)
+* IoT control (Tasmota-based devices)
+* VoIP system (Asterisk + FreePBX)
+* Web server for hosting internal tools
+
+---
+
+## 🧠 Concepts Applied
+
+* LAN vs WAN architecture
+* Private vs Public IP segmentation
+* Network monitoring & observability
+* Virtualization & resource management
+* Infrastructure centralization
+* Endpoint/service testing
+* Secure remote access (VPN + tunnels)
+
+---
+
+## 🔥 Skills Demonstrated
+
+* Networking (routing, subnetting, WiFi design)
+* Linux server administration
+* Virtualization (Proxmox, VMs, LXC)
+* Network monitoring & troubleshooting
+* VPN & secure access (WireGuard, Cloudflare)
+* Web development (Vanilla JS dashboard)
+* IoT integration
+* VoIP setup (Asterisk/FreePBX)
+* Infrastructure design under budget constraints
+
+---
+
+## 📈 Key Learning Outcomes
+
+* Practical subnetting & IP planning
+* Real-world network deployment challenges
+* Monitoring system design
+* REST API & frontend integration
+* Troubleshooting large user environments
+* Performance optimization
+
+👉 Most importantly:
+**Transitioned from using tools → building complete systems**
+
+---
+
+## 🚀 Future Enhancements
+
+* Prometheus + Grafana monitoring stack
+* SNMP-based device monitoring
+* Dockerized backend services
+* Authentication layer (secure dashboard access)
+* Progressive Web App (PWA)
+* Cloud deployment (AWS / Azure)
+
+---
+
+## 💡 Project Impact
+
+This project combines:
+
+* **Real deployment (villa network)**
+* **Self-hosted infrastructure (server lab)**
+* **Custom monitoring system (NOC simulation)**
+
+👉 Making it a **complete end-to-end IT infrastructure project**, not just a lab.
 
 <img width="1920" height="967" alt="PX macOS" src="https://github.com/user-attachments/assets/f74f5707-9550-4607-aff1-a274e126a770" />
 
+<img width="1919" height="1079" alt="Screenshot 2026-03-06 130756" src="https://github.com/user-attachments/assets/e132869b-b962-48bf-b9a8-a1b685e3e9af" />
 
-Objective:
+![IMG_20241203_192142](https://github.com/user-attachments/assets/ab26cb7f-4432-414b-a70b-e3d4e3ff6918)
 
-Repurpose old hardware (an HP laptop and Raspberry Pi) to create a fully functional, multi-OS virtualized environment with personal cloud storage, secure IoT integration, VoIP systems, and remote access—all protected by a robust security infrastructure that combines VPN, encryption, firewalls, and intrusion detection.
-Project Overview:
-I built an integrated solution combining cloud computing, cybersecurity, IoT automation, and private cloud storage using low-cost hardware like a Raspberry Pi 5 and an old HP i3 laptop. The project showcases my skills in virtualization, remote access with Cloudflare Tunnel and Tailscale VPN, cloud services, and penetration testing, all while using open-source tools.
-Turning an Old HP Laptop into a Multi-OS Virtualization Platform:
-I recently repurposed an old HP i3 laptop that had been idle due to outdated hardware. To bring it back to life, I upgraded the storage with an SSD, increased the RAM, and modified the power button to enable booting without opening the lid (since the laptop does not support Wake-on-LAN (WoL)). Initially, I kept the lid open for video output, but the modification allowed for a sleeker setup.
-Installing Proxmox VE and Multiple Operating Systems
-After the hardware upgrades, I installed Proxmox VE, a powerful virtualization platform. Using Proxmox, I configured and installed several operating systems including Ubuntu Server, Ubuntu Desktop, Kali Linux, Windows 11, Windows Server, and Android TV OS, along with a few LXC containers. Each virtual machine (VM) was set up with automatic backups and snapshots for easy management and disaster recovery.
-I accessed all VMs through Proxmox’s built-in VNC feature, which can be used via any web browser, offering convenient access from anywhere.
-Networking Setup
-For network connectivity, I connected the HP laptop to my personal laptop using an Ethernet cable, leveraging the internet connection shared by the personal laptop. This ensures that the HP laptop stays consistently online and accessible within the network.
-Additionally, I set up a Raspberry Pi 5 running UmbrelOS and CasaOS, connected to my network via both Ethernet and Wi-Fi. Several demo apps were installed on the Pi for testing purposes.
-Remote Access with Cloudflare and Tailscale
-To enable secure remote access, I installed Cloudflare Tunnel on both the HP laptop and the Raspberry Pi. This allows me to securely access these devices outside my home network through Cloudflare-generated links. I also created subdomains under my existing domain for easy access to each device via dedicated URLs.
-I integrated Tailscale, using WireGuard for a seamless VPN solution. By connecting all my devices to Tailscale using my Gmail account, I gained access to my home network through IPv4 addresses assigned via the Tailscale dashboard. This setup was successfully tested across various platforms, including Windows and Android NetHunter, allowing full SSH and ping access to all hosts, such as Proxmox, UmbrelOS, and CasaOS, even when off-network.
-Simplifying Access with WebToApp and Blogspot
-To simplify access, I used WebToApp to convert IP addresses into APK files for direct access to services via mobile apps. I also created a Blogspot page to organize network links, offering LAN access for low latency and WAN access for remote use.
-Virtualization & Cloud Computing:
-Using Proxmox VE and multiple VMs, including Ubuntu Server, Kali Linux, Windows 11, macOS, and Android TV OS, alongside LXC containers. This allowed me to experience and run various OS without installing them directly on their hardware or consuming excessive resources from the host OS. I also configured Proxmox for cloud computing tasks, accessible via SSH or VNC from anywhere, ensuring flexibility and efficient resource utilization.
+![Screenshot_20251011_192044_Brave](https://github.com/user-attachments/assets/153c0c87-5760-476a-a548-21beae0d7eb3)
 
-Networking & Remote Access:
-I implemented Tailscale VPN (using WireGuard) and Cloudflare Tunnel for secure remote access to all devices, enabling control and monitoring of the system from any location. The network is bridged across Ethernet and Wi-Fi, allowing seamless communication between devices on the LAN and WAN.
+![IMG_20241221_134233](https://github.com/user-attachments/assets/6898d2a3-cc35-449b-9129-774f977b7bda)
 
-Private Cloud Storage:
-Attached a 500GB SSD to the Raspberry Pi 5 and set up personal cloud storage using Nextcloud and OpenMediaVault (OMV). This setup allows file access across multiple platforms, including Windows (via SMB), Linux, and Android, offering a private cloud solution with robust, secure data access.
+![IMG_20241203_163119](https://github.com/user-attachments/assets/d2819a77-3652-4fd6-b082-d11e16446a05)
 
-Web Server & IoT Automation:
-I configured a web server within the Proxmox environment to host personal projects and demos. For home automation, I used Tasmota to manage IoT devices locally on the LAN, and by integrating Tailscale and Cloudflare Tunnel, I can remotely monitor and control these devices securely.
+![IMG-20251214-WA0000](https://github.com/user-attachments/assets/f04c9761-c0ec-45e5-a3eb-7c80c0b0c3ef)
 
-Media Streaming & Proxy Browsing:
-Plex and Jellyfin to stream media collection across devices within the network or remotely. I configured Firefox inside both CasaOS and UmbrelOS to act as a proxy browser for secure web browsing.
+![IMG_20241221_134223](https://github.com/user-attachments/assets/6e072507-e5e0-459d-a9ba-e2d8067b9a90)
 
-VoIP System Setup:
-Asterisk and FreePBX, establishing VoIP system for local IVR and telephony. 
-All Done for Free!
-This project showcases the power of low-cost hardware, leveraging free, open-source software to create a fully functional cloud, virtualization, and automation environment—all done without any extra cost!
+
+
