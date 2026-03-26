@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VILLA-NETWORK</title>
+
+<style>
+/* ===== BLOGGER COMPATIBILITY FIX (MUST BE FIRST) ===== */
+.post-body {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.post-body * {
+    max-width: unset !important;
+}
+body footer, .post-body footer {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 15px 0 !important;
+    display: block !important;
+    position: relative !important;
+    left: 0 !important;
+}
+.post-body, .post-body div {
+    background: transparent !important;
+}
+
+/* Fix Blogger's default center alignment */
+body, html, .post-body {
+    text-align: left !important;
+}
+
+/* ===== SAFE FOOTER HIDING (NO REDIRECT) ===== */
+/* Only hide widgets, NOT attribution */
+#ContactForm1,
+footer.widget,
+footer.section {
+    display: none !important;
+}
+
+/* ===== GLOBAL STYLES ===== */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: #111;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+.header h1 {
+    margin: 0;
+}
+.date-time {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    background: #0f0f0f;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== IFRAME ===== */
+.dashboard-item iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+    filter: invert(1) hue-rotate(180deg) brightness(0.9);
+}
+
+/* ===== LINK BUTTONS ===== */
+.dashboard-item a {
+    display: block;
+    padding: 15px;
+    background: #3498db;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.dashboard-item a:hover {
+    background: #2980b9;
+}
+
+/* ===== FLOATING BUTTON ===== */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #0078D4;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 200;
+    transition: transform 0.25s ease;
+}
+.floating-btn:hover {
+    transform: rotate(90deg);
+}
+
+/* ===== FLOATING MENU ===== */
+.floating-btn-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 199;
+}
+.floating-btn-container a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit-btn { background: orange; }
+.call-btn { background: #4CAF50; }
+
+/* ===== CUSTOM FOOTER (YOURS) ===== */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #111;
+    color: #aaa;
+}
+footer a {
+    color: #4aa3ff;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>VILLA NETWORK</h1>
+    <div id="date-time" class="date-time"></div>
+</div>
+
+<!-- FLOATING MENU BUTTON -->
+<div class="floating-btn" onclick="toggleFloatingMenu()">+</div>
+
+<!-- FLOATING MENU -->
+<div class="floating-btn-container" id="floatMenu">
+    <a href="https://speed.aman5z.in" class="edit-btn" target="_blank">S</a>
+    <a href="https://uk.aman5z.in/status/villa-network" class="call-btn" target="_blank">N</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+    <div class="dashboard-item">
+        <iframe src="https://fast.com"></iframe>
+    </div>
+
+    <div class="dashboard-item">
+        <a href="https://speed.aman5z.in" target="_blank">CHECK-INTERNET-SPEED</a>
+        <a href="https://uk.aman5z.in/status/villa-network" target="_blank">MONITOR-VILLA-NETWORK-STATUS</a>
+        <a href="http://192.168.0.4:5216" target="_blank">LAN-SPEED (ONLY ON VILLA NETWORK)</a>
+        <a href="http://192.168.0.3:3001/status/villa-network" target="_blank">LAN-STATUS (ONLY ON VILLA NETWORK)</a>
+    </div>
+</div>
+
+<!-- CUSTOM FOOTER -->
+<footer>
+    Created by <a href="https://www.aman5z.in" target="_blank">aman</a> © 2024
+</footer>
+
+<script>
+function toggleFloatingMenu() {
+    const menu = document.getElementById('floatMenu');
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+}
+
+function updateDateTime() {
+    const now = new Date();
+    let h = now.getHours();
+    let m = String(now.getMinutes()).padStart(2,'0');
+    let s = String(now.getSeconds()).padStart(2,'0');
+
+    const ampm = h >= 12 ? 'PM' : 'AM';
+    h = h % 12 || 12;
+
+    const date = now.toLocaleDateString('en-US', {
+        weekday: 'long',
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+    });
+
+    document.getElementById('date-time').textContent =
+        `${date} - ${h}:${m}:${s} ${ampm}`;
+}
+setInterval(updateDateTime, 1000);
+updateDateTime();
+</script>
+
+</body>
+</html>
