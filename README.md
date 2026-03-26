@@ -201,21 +201,22 @@ This project combines:
 
 👉 Making it a **complete end-to-end IT infrastructure project**, not just a lab.
 
-<img width="1920" height="967" alt="PX macOS" src="https://github.com/user-attachments/assets/f74f5707-9550-4607-aff1-a274e126a770" />
 
-<img width="1919" height="1079" alt="Screenshot 2026-03-06 130756" src="https://github.com/user-attachments/assets/e132869b-b962-48bf-b9a8-a1b685e3e9af" />
 
-![IMG_20241203_192142](https://github.com/user-attachments/assets/ab26cb7f-4432-414b-a70b-e3d4e3ff6918)
+![IMG_20241203_192142](https://github.com/user-attachments/assets/7d128bf0-9e4d-48bf-ac27-666126aae4a8)
 
-![Screenshot_20251011_192044_Brave](https://github.com/user-attachments/assets/153c0c87-5760-476a-a548-21beae0d7eb3)
+<img width="1886" height="881" alt="1GBs" src="https://github.com/user-attachments/assets/da4dba08-e3d8-4d66-9054-2252266a81bb" />
 
-![IMG_20241221_134233](https://github.com/user-attachments/assets/6898d2a3-cc35-449b-9129-774f977b7bda)
+![Screenshot_20251011_192044_Brave](https://github.com/user-attachments/assets/c39c02c7-5532-4db1-b851-0cb5efd89389)
 
-![IMG_20241203_163119](https://github.com/user-attachments/assets/d2819a77-3652-4fd6-b082-d11e16446a05)
+<img width="1920" height="967" alt="PX macOS" src="https://github.com/user-attachments/assets/428d6f5e-89b9-4624-bacb-d1ffd9263634" />
 
-![IMG-20251214-WA0000](https://github.com/user-attachments/assets/f04c9761-c0ec-45e5-a3eb-7c80c0b0c3ef)
+<img width="1916" height="878" alt="Pi-Hole DB 300k Queries" src="https://github.com/user-attachments/assets/70bc7940-0a8b-4969-86e4-a306e6a5c039" />
 
-![IMG_20241221_134223](https://github.com/user-attachments/assets/6e072507-e5e0-459d-a9ba-e2d8067b9a90)
+![IMG-20251214-WA0000](https://github.com/user-attachments/assets/322cdd6c-8658-4ee7-8e38-4e10d752b2b5)
 
+![IMG_20241221_134233](https://github.com/user-attachments/assets/7de9dc22-352d-4f18-a2ae-6241fe41adfd)
+
+![IMG_20241221_134223](https://github.com/user-attachments/assets/34c542d9-32d1-4c73-951d-8b9cee7db5ff)
 
 
